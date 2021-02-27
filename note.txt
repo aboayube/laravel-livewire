@@ -1,0 +1,33 @@
+laravel/breeze
+مكتبه يسهل عملية يتحكم في authintaction
+https://github.com/laravel/breeze
+
+composer require laravel/breeze --dev
+
+php artisan breeze:install
+------تنزيل livewire
+composer require livewire/livewire
+
+بتعرف livewire في ملف app.blade.php
+@livewireStyles
+@livewireScripts
+ثم
+php artisan livewire:publish --config
+php artisan livewire:publish --assets
+----jetstream
+composer require laravel/jetstream
+php artisan jetstream:install livewire
+npm install && npm run dev
+php artisan migrate
+php artisan vendor:publish --tag=jetstream-views        
+
+
+----livewire alert
+composer require jantinnerezo/livewire-alert
+---في route/auth
+بفصلك كل عمليات لي هتصيير في مرحله تسجيل
+
+---تحميل محرر نصوص
+  <script src="https://cdn.ckeditor.com/ckeditor5/24.0.0/classic/ckeditor.js"></script>
+php artisan make:model Post -a عشان ينزلي 
+model factory seeder migration
